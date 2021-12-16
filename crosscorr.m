@@ -27,5 +27,5 @@ function [T,C] = crosscorr( g, h, Fs )
         end
     end
     % Scale result to proper magnitude
-    C = ( 1 / L ) * C;
+    C = ( 1 / ( Nsh * Nsg ) ) * C;
 end

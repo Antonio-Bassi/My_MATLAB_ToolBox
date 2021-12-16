@@ -25,5 +25,5 @@ function [T,R] = autocorr( g, Fs )
     end
 
     % Scale result to achieve proper magnitude
-    R = ( 1 / Ns ) * R;
+    R = ( 1 / (Ns^2) ) * R;
 end
