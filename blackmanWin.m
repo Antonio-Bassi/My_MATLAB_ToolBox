@@ -1,9 +1,10 @@
 function [Wg] = blackmanWin( g, alpha )
     % BLACKMANWIN Performs windowing of impulse response using blackman's window
-    %   [Wg] = blackmanWin( g )
-    %   Wg   :   Windowed signal
-    %   Returns an array Wg containing windowed signal.
-    %   g   : signal or impulse response to be windowed.
+    %   [Wg] = blackmanWin( g, alpha )
+    %       Wg    :   Windowed signal impulse response.
+    %   Returns an array containing coefficients scaled by a Blackman window.
+    %       g       : signal or impulse response to be windowed.
+    %       alpha   : Window factor, read brief below.
     % ---------------------------------------------------------------------------------------------
     %  file     : blackmanWin.m
     %  author   : Antonio Vitor-Grossi Basssi
